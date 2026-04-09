@@ -1,0 +1,47 @@
+.circle {
+    position: absolute;
+    background: transparent;
+    width: calc(var(--i) * 2.5vmin);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 3px solid rgb(red, green, blue);
+    transform-style: preserve-3d;
+    transform: rotateX(10deg) translatez(50px);
+    animation: animate 3s ease-in-out calc(var(--i) * 0.8s)infinite;
+    box-shadow: 0 0 15px rgb(red, green, blue) inset 0 0 15px rgb(red, green, blue);
+}
+@keyframes animate {
+0%
+      100% {
+    transform:rotateX(700deg) translatez(50px)
+    translatey:(0);
+    filter:hue-rotate(0);
+} 
+50% {
+  transform: rotatex(70deg) translatez(50px)
+  translateY(-50vmin);
+     filter:hue-rotate(360deg);
+      {
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000;
+    overflow: hidden;
+}
+.container {
+    position: absolute;
+    top: 20%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
